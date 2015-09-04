@@ -209,6 +209,11 @@ header:before {
   padding-bottom:1vw;
   margin:0 40px;
   color:#fff;
+}
+
+.rule {
+ 
+  margin:0 40px;
   border-bottom: 2px solid #b1953a;
 }
 
