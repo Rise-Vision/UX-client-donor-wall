@@ -1,3 +1,7 @@
-$( ".search-icon" ).click(function() {
-  $(this).toggleClass("open");
+$(document).ready(function(){
+
+$( ".search-button" ).on('click', function() {
+  $(".search-icon").toggleClass("open");
+});
+
 });
