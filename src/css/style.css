@@ -101,6 +101,71 @@ header:before {
 	border-radius: 50%;
 	background-color: #7E0F11;
 	box-shadow: 0 0 1vh rgba(0,0,0,0.3);
+    z-index: 3;
+}
+
+/* details styles */
+.details-card {
+  position: absolute;
+  top:460px;
+  left:5%;
+  height:1000px;
+  width: 90%;
+  overflow: hidden;
+  background: #FFF;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #272727;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.details-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height:240px;
+  width:100%;
+  background-color: #4a3c31;
+}
+
+.details-name {
+  line-height: 8vw;
+  font-size: 6vw;
+  font-weight: 300;
+  margin:0;
+  padding-top:2vw;
+  padding-bottom:1vw;
+  margin-left:40px;
+  margin-right:40px;
+  color:#fff;
+  border-bottom: 2px solid #b1953a;
+}
+
+.details-degree {
+  margin: 0;
+  margin:40px 80px 40px 80px;
+  font-size: 3vw;
+  line-height: 3.5vw;
+  font-weight: 300;
+}
+
+.details-image {
+  float: left;
+  margin:40px 40px 40px 80px;
+}
+
+.details-societies {
+  position: relative;
+  top:0px;
+  margin:0 40px 0 40px;
+  border-top: 1px solid rgba(160, 160, 160, 0.8);
+  padding: 0px;
+  float: left;
+}
+
+.details-societies img {
+  width: 190px;
+  margin: 50px;
 }
 
 /*footer styles*/
