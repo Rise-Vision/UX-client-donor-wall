@@ -141,6 +141,7 @@ header {
   -webkit-transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
           transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: 1;
+  display:none;
 }
 
 .handle {
@@ -168,9 +169,19 @@ header {
   -webkit-transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
           transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: -1;
+  /*=======
+  remove for final version
+  =======*/
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+/*=======*/
 }
 
-.open .circle {
+/*.open .circle {
   -webkit-transform: scale(0.02);
       -ms-transform: scale(0.02);
           transform: scale(0.02);
@@ -179,15 +190,15 @@ header {
           transform-origin: 30% 40%;
   background: white;
   border-color: white;
-}
-.open .handle:after {
+}*/
+/*.open .handle:after {
   -webkit-transform-origin: center center;
       -ms-transform-origin: center center;
           transform-origin: center center;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-}
+}*/
 
 
 /* details styles */

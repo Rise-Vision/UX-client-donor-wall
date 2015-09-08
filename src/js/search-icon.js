@@ -1,7 +1,7 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-$( ".search-button" ).on('click', function() {
-  $(".search-icon").toggleClass("open");
-});
+// $( ".search-button" ).on('click', function() {
+//   $(".search-icon").toggleClass("open");
+// });
 
-});
+// });
