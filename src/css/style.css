@@ -13,8 +13,30 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 styles for initial wireframe
 =======*/
 
+/*Benton Sans Fonts*/
+@font-face {
+    font-family: 'BentonSansBold';
+    src:url('https://fonts.iu.edu/fonts/benton-sans-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BentonSansLightRegular';
+    src: url('https://fonts.iu.edu/fonts/benton-sans-light-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BentonSansBookRegular';
+    src:url('https://fonts.iu.edu/fonts/benton-sans-book-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'BentonSansBold', 'BentonsSansBookRegular', 'BentonSansLightRegular', sans-serif;
 	color: #4A3C32;
 	font-weight: 800;
     overflow: hidden;
@@ -102,6 +124,7 @@ header {
 .donor-name {
 	margin: 0;
 	font-size: 2.5vw;
+  font-family:"BentonSansBold";
 }
 
 .search-button {
@@ -141,7 +164,10 @@ header {
   -webkit-transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
           transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: 1;
+  /*remove for final version
+  =======*/
   display:none;
+  /*=======*/
 }
 
 .handle {
@@ -236,7 +262,7 @@ header {
   position: relative;
   line-height: 8vw;
   font-size: 6vw;
-  font-weight: 300;
+  font-family:"BentonSansBookRegular";
   padding-top:2vw;
   padding-bottom:1vw;
   margin:0 64px;
@@ -263,8 +289,8 @@ header {
   margin: 0;
   margin:40px 64px;
   font-size: 3vw;
+  font-family:"BentonSansLightRegular";
   line-height: 3.5vw;
-  font-weight: 300;
 }
 
 .details-image {
